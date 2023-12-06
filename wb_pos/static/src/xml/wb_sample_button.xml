@@ -1,0 +1,7 @@
+
+<t t-name="WBSampleButton" owl="1">
+    <div class="control-button">
+        <i class="fa fa-superpowers" role="img" aria-label="WB Sample Button" title="WB Sample Button" />
+        WB Button
+    </div>
+</t>
