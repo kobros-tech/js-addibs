@@ -1,0 +1,45 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* wb_pos
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 16.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-12-08 09:23+0000\n"
+"PO-Revision-Date: 2023-12-08 09:23+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: wb_pos
+#. odoo-javascript
+#: code:addons/wb_pos/static/src/js/wb_sample_button.js:0
+#, python-format
+msgid "Error Message"
+msgstr "رسالة خطأ"
+
+#. module: wb_pos
+#. odoo-javascript
+#: code:addons/wb_pos/static/src/js/wb_sample_button.js:0
+#, python-format
+msgid "The simple error message screen."
+msgstr "شاشة رسالة الخطأ البسيطة."
+
+#. module: wb_pos
+#. odoo-javascript
+#: code:addons/wb_pos/static/src/xml/wb_sample_button.xml:0
+#, python-format
+msgid "WB Button"
+msgstr "زر دبليو بي"
+
+#. module: wb_pos
+#. odoo-javascript
+#: code:addons/wb_pos/static/src/xml/wb_sample_button.xml:0
+#: code:addons/wb_pos/static/src/xml/wb_sample_button.xml:0
+#, python-format
+msgid "WB Sample Button"
+msgstr "زر عينة WB"

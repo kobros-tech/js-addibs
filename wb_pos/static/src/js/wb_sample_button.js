@@ -5,6 +5,8 @@ odoo.define("wb_pos.WBSampleButton", function(require){
     const ProductScreen = require("point_of_sale.ProductScreen");
     const Registries = require("point_of_sale.Registries");
     const {useListener} = require("@web/core/utils/hooks");
+    const core = require("web.core");
+    var _t = core._t;
 
     class WBSampleButton extends PosComponent {
 
@@ -17,21 +19,21 @@ odoo.define("wb_pos.WBSampleButton", function(require){
 
             // ERROR POPUP
 
-            // this.showPopup("ErrorPopup", {
-            //     title: "Error Message",
-            //     body: "The simple error message screen.",
-            // });
+            this.showPopup("ErrorPopup", {
+                title: _t("Error Message"),
+                body: this.env._t("The simple error message screen."),
+            });
 
 
             // CONFIRM POPUP
 
-            const { confirmed } = await this.showPopup("ConfirmPopup",{
-                title: "Confirm Popup",
-                body: "Are you really happy with Angel?",
-                confirmText: "Yes",
-                cancelText: "No",
-            });
-            console.log("confirm button: ", confirmed);
+            // const { confirmed } = await this.showPopup("ConfirmPopup",{
+            //     title: "Confirm Popup",
+            //     body: "Are you really happy with Angel?",
+            //     confirmText: "Yes",
+            //     cancelText: "No",
+            // });
+            // console.log("confirm button: ", confirmed);
 
 
             // OFFLINE ERROR POPUP
