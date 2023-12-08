@@ -1,3 +1,2 @@
 # -*- coding: utf-8 -*-
-
-# no thing
+from . import controller

@@ -17,12 +17,31 @@ odoo.define("wb_pos.WBSampleButton", function(require){
 
         async wb_sample_button_click(){
 
-            // ERROR POPUP
+            
+            // var result = await this.rpc({
+            //     'model': "res.lang",
+            //     'method': "search_read",
+            //     'args': [[], ['id', 'name', 'code', ]],
+            // });
 
-            this.showPopup("ErrorPopup", {
-                title: _t("Error Message"),
-                body: this.env._t("The simple error message screen."),
+            var result = await this.rpc({
+                route: "/pos/rpc/example",
+                params: {}
             });
+
+            console.log(result);
+
+            result.forEach(function(value){
+                console.log("Record----> ", value);
+            });
+
+
+            // ERROR POPUP          TRANSLATION
+
+            // this.showPopup("ErrorPopup", {
+            //     title: _t("Error Message"),
+            //     body: this.env._t("The simple error message screen."),
+            // });
 
 
             // CONFIRM POPUP
